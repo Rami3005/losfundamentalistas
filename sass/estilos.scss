@@ -13,11 +13,12 @@ a{
 li{
     list-style: none;
 }
+@import "colores";
 
 /*EMPIEZA CSS HEADER-NAVBAR*/
 #header{
-    background: rgb(118,74,252) !important;
-    background: radial-gradient(circle, #49287F 0%, rgba(0,0,0,1) 88%) !important;
+    background: $color-header !important;
+    background: $color-gradiente !important;
     a{
         transition: all 0.4s linear;
     }
@@ -36,11 +37,11 @@ li{
 }
 .navlinksuno{
     font-weight: bold;
-    color: white !important;
+    color: $color-blanco !important;
     margin-left: 100px;
     &:hover{
-    color: black !important;
-    background-color: #FFC0CB;
+    color: $color-negro !important;
+    background-color: $color-hover;
     border-radius: 20px;
     }
 }
@@ -52,7 +53,7 @@ h1{
 }
 /*EMPIEZA CSS INDEX*/
 .izquierda{
-    background-color: #49287F;
+    background-color: $color-backgroundindex;
     height: 100vh;
     width: 50%;
 }
@@ -82,13 +83,13 @@ h1{
     width: 50%;
     margin: auto;
     margin-left: 120px;
-    color: black;
+    color: $color-negro;
     }
     a{
-    border: 3px solid pink;
+    border: 3px solid $color-boton;
     padding: 20px;
     text-decoration: none;
-    color: pink;
+    color: $color-boton;
     border-radius: 30px;
     font-weight: bold;
     display: inline-block;
@@ -96,7 +97,7 @@ h1{
     }
 }
 .creative{
-    color: white;
+    color: $color-blanco;
 }
 .link{
     margin-left: 130px;
@@ -104,7 +105,7 @@ h1{
 
 /*EMPIEZA CSS DISCOGRAFIA*/
 .discografia{
-    background-color: black;
+    background-color: $color-negro;
     height: 85vh;
     display: flex;
 }
@@ -122,7 +123,7 @@ h1{
 }
 .discografiaa{
     h1{
-    color: pink;
+    color: $color-boton;
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -134,14 +135,14 @@ h1{
 }
 .discografia{
     a{
-    color: white;
+    color: $color-blanco;
     font-family: 'Montserrat';
     font-size: 40px;
     margin-left: 80px;
     text-decoration: none;
     font-family: 'Montserrat';
     &:hover{
-        color: #E2A4B0;
+        color: $color-hoverdisco;
     }
     }
     span{
@@ -153,7 +154,7 @@ h1{
 .nosotros{
     width: 100%;
     height: 100vh;
-    background-color: #E2A4B0;
+    background-color: $color-nosotros;
 
 }
 .nosotrosimg{
@@ -169,10 +170,10 @@ h1{
     border-radius: 0;
     }
     h5{
-    color: white;
+    color: $color-blanco;
     }
     p{
-        color: white;
+        color: $color-blanco;
     }
 }
 .nosotrostext{
@@ -214,10 +215,10 @@ h1{
 
 /*EMPIEZA CSS HISTORIA*/
 .historia{
-    background-color: #9b59b6;
+    background-color: $color-historia;
     height: 200vh;
     h1{
-    color: white;
+    color: $color-blanco;
     font-size: 70px;
     display: flex;
     justify-content: center;
@@ -228,7 +229,7 @@ h1{
     font-weight:bold;
     }
     h2{
-    color: #670d7e;
+    color: $color-historiah2;
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -246,10 +247,10 @@ h1{
     font-size: 30px;
     justify-items: center;
     margin-bottom: 40px;
-    background-color: #360652;
+    background-color: $color-historiap;
     padding: 20px;
     width: 520px;
-    color: white;
+    color: $color-blanco;
     border-radius: 30px;
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
@@ -264,10 +265,10 @@ h1{
     font-size: 30px;
     justify-items: center;
     margin-bottom: 40px;
-    background-color: #360652;
+    background-color: $color-historiap;
     padding: 20px;
     width: 1000px;
-    color: white;
+    color: $color-blanco;
     border-radius: 30px;
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
@@ -282,10 +283,10 @@ h1{
     font-size: 30px;
     justify-items: center;
     margin-bottom: 40px;
-    background-color: #360652;
+    background-color: $color-historiap;
     padding: 20px;
     width: 1200px;
-    color: white;
+    color: $color-blanco;
     border-radius: 30px;
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
@@ -300,16 +301,140 @@ h1{
     font-size: 30px;
     justify-items: center;
     margin-bottom: 40px;
-    background-color: #360652;
+    background-color: $color-historiap;
     padding: 20px;
     width: 1000px;
-    color: white;
+    color: $color-blanco;
     border-radius: 30px;
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
     }
 }
 
+#contacto{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $color-contacto;
+    .container{
+        color: $color-negro;
+        margin-top: 70px;
+        font-family: 'Source Code Pro';
+        font-size: 30px;
+    }
+    .btn{
+        background-color: $color-negro !important;
+        border-color: $color-negro !important;
+}
+}
+.maincontacto{
+    text-align: center;
+    h1{
+        font-size: 70px;
+        color: $color-blanco;
+        font-family: 'Jost';
+        font-weight:bold;
+        margin-top: 30px;
+    }
+    h2{
+        color: $color-nosotros;
+        font-family: 'Jost';
+        font-weight:bold;
+        font-size: 50px;
+    }
+    h3{
+        color: $color-negro;
+        font-size: 20px;
+    }
+}
+
+/*EMPIEZA CSS FOOTER*/
+.pie-pagina{
+    width: 100%;
+    background-color: $color-footer;
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+        .box{
+            figure{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 250px;
+                }
+            }
+            h2{
+                color: $color-blanco;
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+            p{
+                color: $color-blancogris;
+                margin-bottom: 10px;
+            }
+        }
+        .red-social{
+            a{
+                display: inline-block;
+                text-decoration: none;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                color: $color-blanco;
+                margin-right: 10px;
+                background-color: $color-footera;
+                text-align: center;
+                transition-timing-function: all 300ms ease;
+                
+            }
+            #facebook{
+                &:hover{
+                    color: #3b5998;
+                }
+            }
+            #instagram{
+                &:hover{
+                    color: #9A34B1;
+                }
+            }
+            #twitter{
+                &:hover{
+                    color: #179CF0;
+                }
+            }
+            #youtube{
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+    .grupo-2{
+        background-color: $color-nolucro;
+        padding: 15px 10px;
+        text-align: center;
+        color: $color-blanco;
+        small{
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
 
 
 /*EMPIEZAN LOS MediaQ*/
