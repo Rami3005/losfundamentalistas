@@ -425,6 +425,7 @@ h1 {
   font-size: 15px;
 }
 
+/*EMPIEZAN LOS MediaQ*/
 @media screen and (max-width: 800px) {
   .pie-pagina .grupo-1 {
     width: 90%;
@@ -433,7 +434,12 @@ h1 {
     padding: 35px 0px;
   }
 }
-/*EMPIEZAN LOS MediaQ*/
+@media (min-width: 992px) and (max-width: 1149px) {
+  .navbar-collapse a {
+    margin: 0%;
+    padding: 0%;
+  }
+}
 @media screen and (max-width: 1918px) {
   .card1:hover, .card2:hover, .card3:hover {
     margin: 0%;
@@ -576,6 +582,62 @@ h1 {
   .navlinksuno, .navlinks {
     margin: auto;
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1269px) {
+  .ulthistoria p {
+    font-size: 20px;
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1041px) {
+  .ulthistoria p {
+    width: 700px;
+  }
+
+  .primhistoria p {
+    width: 700px;
+  }
+
+  .fundahistoria p {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 733px) {
+  .historia {
+    height: auto;
+  }
+
+  .ulthistoria p {
+    width: 520px;
+  }
+
+  .primhistoria p {
+    width: 520px;
+  }
+
+  .fundahistoria p {
+    width: 520px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .historia {
+    height: auto;
+  }
+
+  .ulthistoria p {
+    width: 400px;
+    border-radius: 0%;
+  }
+
+  .primhistoria p {
+    width: 400px;
+    border-radius: 0%;
+  }
+
+  .fundahistoria p {
+    width: 400px;
+    border-radius: 0%;
   }
 }
 @keyframes rotar_logo {
