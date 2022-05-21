@@ -103,6 +103,7 @@ h1 {
   font-weight: bold;
   display: inline-block;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .creative {
@@ -337,12 +338,13 @@ h1 {
 #contacto .container {
   color: black;
   margin-top: 70px;
-  font-family: "Source Code Pro";
+  font-family: "Jost";
   font-size: 30px;
 }
 #contacto .btn {
   background-color: black;
   border-color: black;
+  margin-bottom: 30px;
 }
 
 .maincontacto {
@@ -525,6 +527,14 @@ h1 {
   .discografia {
     height: auto;
     width: 100%;
+  }
+
+  #contacto {
+    height: auto;
+  }
+
+  .historia {
+    height: auto;
   }
 
   .izquierda {
